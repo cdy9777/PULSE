@@ -1,0 +1,12 @@
+__pycache__/
+checkpoint/
+.DS_Store
+.vscode
+*.pyc
+
+*.zip
+*.bin
+runs/
+only_test.py
+log/
+test.py

@@ -1,0 +1,39 @@
+optimizer:
+  name: adam
+  lr: 1.0e-3
+  weight_decay: 0
+
+train:
+  epoch: 500
+  batch_size: 4096
+  save_model: false
+  loss: pairwise # bpr
+  log_loss: false # whether to log loss
+  test_step: 3 # evaluate per {test_step} epochs
+  patience: 5
+  reproducible: true
+  seed: 2023
+  #pretrain_path: ./checkpoint/xxxx.pth
+
+test:
+  metrics: [recall, ndcg] 
+  k: [10, 20, 40] 
+  batch_size: 1024 
+
+
+data:
+  type: social # choose in {general_cf, multi_behavior, sequential, social}
+  name: yelp
+
+
+model:
+  name: lightgcn 
+  layer_num: 4
+  reg_weight: 1.0e-6
+  embedding_size: 64
+
+tune:
+  enable: false 
+  hyperparameters: [reg_weight] 
+  layer_num: [2, 3, 4] 
+  reg_weight: [1.0e-7, 1.0e-6, 1.0e-5, 1.0e-4, 1.0e-3]
