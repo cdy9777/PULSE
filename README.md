@@ -34,3 +34,11 @@ The following hyperparameter ranges were used for model selection and all report
 
 Reference:
 https://github.com/HKUDS/SSLRec/tree/main
+
+---
+### License
+
+This project is licensed under the Apache License 2.0.
+
+This repository is based on an official implementation licensed under
+the Apache License 2.0, with modifications by Doyun Choi.
