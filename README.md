@@ -1,5 +1,5 @@
 # PULSE : Socially-Aware User Representation Modeling toward Extremely Parameter-Efficient Graph Collaborative Filtering
-📄 *Proceedings of The Web Conference (WWW) 2026* [![DOI](https://zenodo.org/badge/1135666336.svg)](https://doi.org/10.5281/zenodo.18295272)
+📄 *Proceedings of The Web Conference (WWW) 2026*
 
 ---
 
